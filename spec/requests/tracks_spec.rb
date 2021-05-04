@@ -1,7 +1,7 @@
 require 'rails_helper'
 
 RSpec.describe 'Tracks', type: :request do
-#  Initialize the test data
+  #  Initialize the test data
   let!(:train) { create(:train) }
   let!(:tracks) { create_list(:track, 20, train_id: train.id) }
   let(:train_id) { train.id }
