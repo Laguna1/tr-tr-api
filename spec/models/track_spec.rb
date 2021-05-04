@@ -2,7 +2,7 @@ require 'rails_helper'
 
 RSpec.describe Track, type: :model do
   # Association test
-  # ensure an item record belongs to a single todo record
+  # ensure an track record belongs to a single train record
   it { should belong_to(:train) }
   # Validation test
   # ensure column name is present before saving
